@@ -6,6 +6,9 @@
     <title>드론 상태</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+            background-color: #f0f8e0; /* 연한 연두색 */
+        }
         .navbar {
             background-color: #9acd32; /* 연두색 */
             justify-content: center; /* 네비게이션 가운데 정렬 */
@@ -25,7 +28,7 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #ffffff;
+            background-color: #ffffff; /* 흰색 */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -43,6 +46,12 @@
         }
         .drone-status th {
             background-color: #f8f9fa;
+        }
+        .drone-status tbody tr:nth-child(even) {
+            background-color: #e6e6fa; /* 연한 라벤더색 */
+        }
+        .drone-status tbody tr:nth-child(odd) {
+            background-color: #faebd7; /* 안티크 화이트 */
         }
     </style>
 </head>

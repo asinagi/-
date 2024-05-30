@@ -6,6 +6,9 @@
     <title>농지 현황 출력</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+            background-color: #f0f8e0; /* 연한 연두색 */
+        }
         .navbar {
             background-color: #9acd32; /* 연두색 */
             justify-content: center; /* 네비게이션 가운데 정렬 */
@@ -25,7 +28,7 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #ffffff;
+            background-color: #ffffff; /* 흰색 */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -42,7 +45,27 @@
             text-align: center;
         }
         .sensor-data th {
-            background-color: #f8f9fa;
+            background-color: #d3d3d3; /* 연한 회색 */
+        }
+        .crop-data {
+            background-color: #e6e6fa; /* 연한 라벤더색 */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .pest-data {
+            background-color: #faebd7; /* 안티크 화이트 */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .pest-data ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .pest-data ul li {
+            background-color: #ffe4b5; /* 밀감 색 */
+            margin-bottom: 5px;
+            padding: 5px;
+            border-radius: 3px;
         }
     </style>
 </head>
