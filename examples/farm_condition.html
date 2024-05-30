@@ -67,9 +67,28 @@
             padding: 5px;
             border-radius: 3px;
         }
+        .home-button {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .home-button a {
+            background-color: #9acd32; /* 연두색 */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .home-button a:hover {
+            background-color: #8ac926; /* 진한 연두색 */
+            color: white;
+        }
     </style>
 </head>
 <body>
+    <div class="home-button">
+        <a href="index.html">홈페이지</a>
+    </div>
     <header class="d-flex justify-content-between p-3 border-bottom">
         <div class="logo">
             <!-- 로고가 들어갈 위치 -->
@@ -87,7 +106,7 @@
                         농지 정보
                     </a>
                     <div class="dropdown-menu" aria-labelledby="farmInfoDropdown">
-                        <a class="dropdown-item" href="#">농지 현황 출력</a>
+                        <a class="dropdown-item" href="farm_condition.html">농지 현황 출력</a>
                         <a class="dropdown-item" href="#">농지 정보 입력</a>
                         <a class="dropdown-item" href="#">출입 금지구역 설정</a>
                     </div>
@@ -97,7 +116,7 @@
                         드론
                     </a>
                     <div class="dropdown-menu" aria-labelledby="droneDropdown">
-                        <a class="dropdown-item" href="#">현재 드론의 상태</a>
+                        <a class="dropdown-item" href="drone_status.html">현재 드론의 상태</a>
                         <a class="dropdown-item" href="#">드론 예상 경로</a>
                     </div>
                 </li>
