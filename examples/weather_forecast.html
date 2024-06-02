@@ -52,6 +52,20 @@
         .weather-forecast th {
             background-color: #d3d3d3; /* 연한 회색 */
         }
+        footer {
+            background-color: rgb(101, 67, 33); /* 짙은 갈색 */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-links a {
+            color: rgb(144, 238, 144); /* 연두색 */
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -114,6 +128,17 @@
         </div>
     </div>
 
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 재해 모니터링 시스템. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">문의하기</a>
+            </div>
+        </div>
+    </footer>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script>
         $(document).ready(function() {
@@ -145,18 +170,6 @@
         });
     </script>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 재해 모니터링 시스템. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">이용약관</a>
-                <a href="#">개인정보처리방침</a>
-                <a href="#">문의하기</a>
-            </div>
-        </div>
-    </footer>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
