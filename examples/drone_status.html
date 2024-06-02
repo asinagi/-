@@ -53,6 +53,20 @@
         .drone-status tbody tr:nth-child(odd) {
             background-color: #faebd7; /* 안티크 화이트 */
         }
+        footer {
+            background-color: rgb(101, 67, 33); /* 짙은 갈색 */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-links a {
+            color: rgb(144, 238, 144); /* 연두색 */
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -76,8 +90,8 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="farmInfoDropdown">
                         <a class="dropdown-item" href="farm_condition.html">농지 현황 출력</a>
-                        <a class="dropdown-item" href="#">농지 정보 입력</a>
-                        <a class="dropdown-item" href="#">출입 금지구역 설정</a>
+                        <a class="dropdown-item" href="farm_input.html">농지 정보 입력</a>
+                        <a class="dropdown-item" href="farm_prohibited_area.html">출입 금지구역 설정</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -86,11 +100,11 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="droneDropdown">
                         <a class="dropdown-item" href="drone_status.html">현재 드론의 상태</a>
-                        <a class="dropdown-item" href="#">드론 예상 경로</a>
+                        <a class="dropdown-item" href="drone's_expected_route.html">드론 예상 경로</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">기상청 예보</a>
+                    <a class="nav-link" href="weather_forecast.html">기상청 예보</a>
                 </li>
             </ul>
         </div>
@@ -120,6 +134,17 @@
             </table>
         </div>
     </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 재해 모니터링 시스템. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">문의하기</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
